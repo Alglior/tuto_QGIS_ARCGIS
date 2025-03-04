@@ -1,7 +1,7 @@
 # Tutoriel QGIS : Préparation et Analyse des Couches Géographiques
 
 **Conseil** : Renommer clairement les couches pour une meilleure lisibilité.
-              Pour chercher les fonctions uitilisés dans ce tutoriel faire CTRL + K pour rechercher 
+              Pour chercher les fonctions utilisées dans ce tutoriel, faire CTRL + K pour rechercher
 
 ## Étape 1 : Vérification et Uniformisation des Systèmes de Projection
 
