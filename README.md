@@ -110,11 +110,11 @@
 - Choisir un format A3 pour plus d'espace en cliquant sur l'espace vide de la mise en page et en allant sur les propriétés à droite
 ![Image](media/image33.png)
 - Pour changer le texte des couches, double-cliquer sur le nom de la couche puis écrire le nom que vous souhaitez dans la case
-![Image](images/29.png)
+![Image](images/image29.png)
 
 ### Paramétrage de titre et des sources
 - En allant sur les propriétés à droite, en horizontale et verticale, cliquer centrer
-![Image](images/28.png)
+![Image](images/image28.png)
 
 
 ### Finalisation
