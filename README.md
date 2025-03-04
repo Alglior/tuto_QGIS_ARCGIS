@@ -10,7 +10,7 @@
 1. **Couche CLC 2018 Pilat** 
    - Système de projection : WGS 84
    - Objectif : Uniformiser en Lambert 93 pour un travail à l'échelle française
-   - Méthode : Utiliser la fonction "Enregistrer sous" pour reprojeter
+   - Méthode : Utiliser la fonction "Enregistrer sous" pour reprojeter en faisant un clique droit sur la couche
    
 ![Image](images/image1.png)
 
