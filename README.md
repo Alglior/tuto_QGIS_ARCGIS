@@ -92,13 +92,13 @@
 
 ### Préparation de la Carte
 1. Aller dans "Projet" > "Nouvelle mise en page"
-![Image](media/image29.png)
+![Image](images/image24.png)
 2. Ajouter les éléments :
+![Image](images/37.png)
    - Carte
    - Légende
-   - Titre
-   - Sources
-   - Auteur
+   - Titre(label)
+   - Sources/ Auteur(label)
    - Flèche du Nord
    - Échelle
 
@@ -109,8 +109,17 @@
 ![Image](media/image32.png)
 - Choisir un format A3 pour plus d'espace en cliquant sur l'espace vide de la mise en page et en allant sur les propriétés à droite
 ![Image](media/image33.png)
+- Pour changer le texte des couches, double-cliquer sur le nom de la couche puis écrire le nom que vous souhaitez dans la case
+![Image](images/29.png)
+
+### Paramétrage de titre et des sources
+- En allant sur les propriétés à droite, en horizontale et verticale, cliquer centrer
+![Image](images/28.png)
+
+
 ### Finalisation
 - Exporter la carte en image
 - Enregistrer dans le dossier souhaité
 ![Image](media/image36.png)
+
 **Conseil** : Renommer clairement les couches pour une meilleure lisibilité.
