@@ -13,7 +13,7 @@
 
 2. **Couche des Limites Administratives**
    - Problème initial : Absence de projection correcte
-  ![Image](images/image12.png) 
+  ![Image](images/image2.png) 
    - Solution : Utiliser "Assign Projection" dans QGIS
      * Correction : La couche était en Lambert II (EPSG:27572)
      ![Image](media/image4.png)
