@@ -92,7 +92,7 @@
 
 ### Préparation de la Carte
 1. Aller dans "Projet" > "Nouvelle mise en page"
-![Image](images/image24.png)
+![Image](images/image30.png)
 2. Ajouter les éléments :
 ![Image](images/37.png)
    - Carte
