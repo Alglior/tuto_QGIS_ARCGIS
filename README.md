@@ -10,4 +10,5 @@ Deux méthodologies sont proposées pour cette cartographie :
 1. [Méthodologie ArcGIS Pro](/arcgis.md)
 2. [Méthodologie QGIS](/qgis.md)
 
-Ces approches permettront une analyse géospatiale précise et détaillée du territoire.
+Bilan 
+[Bilan](/bilan.md)
