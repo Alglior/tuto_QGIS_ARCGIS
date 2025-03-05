@@ -5,7 +5,7 @@
 
 ## Étape 1 : Vérification et Uniformisation des Systèmes de Projection
 
-0. Importer les couches shapefiles et le Typo_CLC.dbf du dossier couches
+0. Importer les couches shapefiles, Typo_CLC.dbf et le mnt.asc du dossier couches
 
 ### Projection des Couches Existantes
 
