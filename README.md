@@ -5,6 +5,8 @@
 
 ## Étape 1 : Vérification et Uniformisation des Systèmes de Projection
 
+0. Importer les couches shapefiles et le Typo_CLC.dbf du dossier couches
+
 ### Projection des Couches Existantes
 
 1. **Couche CLC 2018 Pilat** 
