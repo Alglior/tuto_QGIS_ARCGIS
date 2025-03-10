@@ -106,7 +106,7 @@ Ensuite faite un clic droit sur le nom de la couche puis faite exporter les obje
 ![Image](media/image29.png)
 
 - couper les couches avec le buffer fait sur la couche des limites du crêt. Utiliser la fonction de batch pour aller plus vite.
-![Image](image/batch.png)
+![Image](images/batch.png)
  
   
 ## Étape 6 : Création de la Mise en Page
