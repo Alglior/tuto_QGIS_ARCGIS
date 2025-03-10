@@ -86,6 +86,8 @@
 ## Étape 5 : Jointure et Stylisation
 
 ### Jointure avec la Couche Typo_CLC
+- clique droit sur la couche CLC_2018_Pilat puis propriété et aller dans jointure puis fait une jointure avec la couche TYPE_CLC entre le code_18 et le code_06
+![Image](media/image_jointure.png)
 - Télécharger les fichiers de style depuis data.gouv.fr
 - Charger le style .qml dans QGIS avec le bouton style puis cliquer "load style"
 ![Image](media/image27.png)
