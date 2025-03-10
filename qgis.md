@@ -48,11 +48,11 @@
     • Véranne
 
 Pour le faire , faite clique droit sur la couche limites adminstrative et aller dans table attributaire
-![Image](image/select_qgis.png)
+![Image](images/select_qgis.png)
 une fois dedans, selectionner sur le coter les communes ayant le même nom.
 Ensuite faite un clic droit sur le nom de la couche puis faite exporter les objets selectionné et sauvegarder votre couche
 3. Créer un buffer de 500 mètres à partir de la couche des limites administratives du crêt du pilat
-![Image](media/image.png)
+![Image](medias/image.png)
 4. Options importantes :
    - Cocher la case "Dissolve" pour obtenir un buffer unifié
    - Éviter les zones fragmentées
