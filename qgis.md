@@ -33,21 +33,31 @@
 - Utiliser la fonction "Enregistrer sous" pour mettre à jour le CRS de la couche MNT
 ![Image](media/image7.png)
 ### Création d'un Buffer
-1. Créer un buffer de 500 mètres à partir de la couche des limites administratives
-![Image](media/image8.png)
-2. Options importantes :
+
+0. faire une selection des commuens suivante :
+
+1.  • Colombier
+    • Doizieux
+    • Graix
+    • La Valla-en-Gier
+    • Le Bessat
+    • Pélussin
+    • Roisey
+    • Saint-Appolinard
+    • Thélis-la-Combe
+    • Véranne
+
+Pour le faire , faite clique droit sur la couche limites adminstrative et aller dans table attributaire
+![Image](image/select_qgis.png)
+une fois dedans, selectionner sur le coter les communes ayant le même nom.
+Ensuite faite un clic droit sur le nom de la couche puis faite exporter les objets selectionné et sauvegarder votre couche
+3. Créer un buffer de 500 mètres à partir de la couche des limites administratives du crêt du pilat
+![Image](media/image.png)
+4. Options importantes :
    - Cocher la case "Dissolve" pour obtenir un buffer unifié
    - Éviter les zones fragmentées
-3. Sauvegarder la couche
+5. Sauvegarder la couche
 ![Image](media/image9.png)
-### Écrêtage (Clip) de la Couche SIC
-- Utiliser le buffer de 500m pour écrêter la couche SIC
-- Nommer la nouvelle couche : "SIC_zone_etude"
-![Image](media/image10.png)
-- Sauvegarder la couche
-![Image](media/image12.png)
-- Résultat obtenu devrait ressembler à cela:
-![Image](media/image11.png)
 ## Étape 3 : Analyse Altimétrique
 
 ### Calcul des Altitudes Supérieures à 1300m
@@ -95,6 +105,10 @@
 - Appliquer la stylisation personnalisée
 ![Image](media/image29.png)
 
+- couper les couches avec le buffer fait sur la couche des limites du crêt. Utiliser la fonction de batch pour aller plus vite.
+![Image](image/batch.png)
+ 
+  
 ## Étape 6 : Création de la Mise en Page
 
 ### Préparation de la Carte
