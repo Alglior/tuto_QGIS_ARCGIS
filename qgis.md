@@ -141,5 +141,5 @@ Ensuite faite un clic droit sur le nom de la couche puis faite exporter les obje
 ### Finalisation
 - Exporter la carte en image
 - Enregistrer dans le dossier souhaité
-![Image](media/image36.png)
+![Image](image/pilat_mont.png)
 
