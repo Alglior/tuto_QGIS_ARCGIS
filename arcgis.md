@@ -63,7 +63,7 @@
 18. Pour la couche de 1300m, aller dans la symbologie en faisant clic droit puis symbologie, puis prenez valeurs uniques et dans le champ 1 mettez gridcode puis choisissez vos couleurs.
     Ensuite, faites exactement la même chose mais avec le raster polygonisé pour les pentes de 4 degrés.
     ![Image](media/arcgis/Screenshot_from_2025-03-09_18-21-10.png)
-    ![Image](media/arcgis/Screenshot_from_2025-03-11_20-49-00.png)
+    
 
 19. Maintenant pour la mise en page, aller dans "Insérer" puis "Nouvelle mise en page" et prenez le format A3 car notre légende est grande et cela est plus pratique pour organiser notre mise en page de la carte.
     ![Image](media/arcgis/Screenshot_from_2025-03-11_21-53-05.png)
