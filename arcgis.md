@@ -41,7 +41,7 @@
     ![Image](media/arcgis/style.png)
     
     Pour la couche SIC, choisissez comme valeurs SITE_NAME car cela va vous donner le nom des sites présents et vous pourrez ensuite modifier les couleurs comme vous le souhaitez en faisant un clic droit.
-    ![Image](media/arcgis/SIC_style.png)
+    ![Image](media/arcgis/style_SIC.png)
     
     Il est recommandé de faire un double clic sur la variable dans la symbologie puis aller ensuite dans propriétés et modifier la taille de la bordure à 2px pour que les SIC se démarquent plus des autres couches comme Corine Land Cover 2018
     ![Image](media/arcgis/SIC_bordure.png)
