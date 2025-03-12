@@ -7,7 +7,7 @@
 2. Ensuite, importer les couches pour le projet en prenant les .shp et en les glissant depuis un dossier dans le logiciel ArcGIS Pro.
 
 3. Ouvrez la fenêtre de géotraitement, toutes les fonctions qui vont être citées vous seront trouvées dans cette fenêtre.
-   ![Image](media/arcgis/Screenshot_from_2025-03-09_17-32-25)
+   ![Image](media/arcgis/Screenshot_from_2025-03-09_17-32-25.png)
 
 4. Reprojection des couches car, comme on peut le voir, certaines couches ne sont pas au bon endroit. Donc, aller chercher "Définir une projection", puis choisir notre couche et ensuite cliquer sur la planète et chercher dans l'onglet recherche 27572 et sélectionner Paris Lambert Zone II.
    ![Image](media/arcgis/Screenshot_from_2025-03-09_17-39-41.png)
