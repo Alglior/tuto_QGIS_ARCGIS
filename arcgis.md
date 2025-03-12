@@ -156,4 +156,4 @@ Pour exporter la mise en page, aller dans "Partager" ; "Imprimer la mise en page
 ## Résultat final
 Le résultat : 
 
-![Image](media/arcgis/mise_en_page2.pdf)
+![Image](media/arcgis/mise_en_page2-1.png)
