@@ -1,100 +1,159 @@
 # Guide d'utilisation ArcGIS Pro
 
-1. Ouvrir ArcGIS Pro et choisir le projet avec carte.
-   Ensuite, une fois le projet lancé, cliquer sur la couche carte, faire clic droit puis cliquer sur propriétés et utiliser le Lambert 2154 comme système de projection.
-   ![Image](media/arcgis/Screenshot_from_2025-03-09_17-28-50.png)
+## 1. Ouvrir et configurer le projet
+Ouvrir ArcGIS Pro et choisir le projet avec carte. Ensuite, une fois le projet lancé, cliquer sur la couche carte, faire clic droit puis cliquer sur propriétés et utiliser le Lambert 2154 comme système de projection.
 
-2. Ensuite, importer les couches pour le projet en prenant les .shp et en les glissant depuis un dossier dans le logiciel ArcGIS Pro.
+![Image](media/arcgis/Screenshot_from_2025-03-09_17-28-50.png)
 
-3. Ouvrez la fenêtre de géotraitement, toutes les fonctions qui vont être citées vous seront trouvées dans cette fenêtre.
-   ![Image](media/arcgis/Screenshot_from_2025-03-09_17-32-25.png)
+## 2. Importer les couches
+Ensuite, importer les couches pour le projet en prenant les .shp et en les glissant depuis un dossier dans le logiciel ArcGIS Pro.
 
-4. Reprojection des couches car, comme on peut le voir, certaines couches ne sont pas au bon endroit. Donc, aller chercher "Définir une projection", puis choisir notre couche et ensuite cliquer sur la planète et chercher dans l'onglet recherche 27572 et sélectionner Paris Lambert Zone II.
-   ![Image](media/arcgis/Screenshot_from_2025-03-09_17-39-41.png)
-   ![Image](media/arcgis/Screenshot_from_2025-03-09_17-33-01.png)
-   ![Image](media/arcgis/Screenshot_from_2025-03-09_17-44-14.png)
+## 3. Accéder aux fonctions de géotraitement
+Ouvrez la fenêtre de géotraitement, toutes les fonctions qui vont être citées vous seront trouvées dans cette fenêtre.
 
-5. Maintenant, il faut reprojeter en mode lot et prendre le système de coordonnées de la carte qui est 2154 ou Lambert 93.
-   ![Image](media/arcgis/Screenshot_from_2025-03-09_17-50-26.png)
+![Image](media/arcgis/Screenshot_from_2025-03-09_17-32-25.png)
 
-6. Pour voir si la transformation a bien été effectuée, vous pouvez faire clic droit sur la couche, propriétés, sources et références spatiales.
-   ![Image](media/arcgis/Screenshot_from_2025-03-09_17-51-12.png)
-   ![Image](media/arcgis/Screenshot_from_2025-03-09_17-51-29.png)
+## 4. Reprojection des couches
+Reprojection des couches car, comme on peut le voir, certaines couches ne sont pas au bon endroit. Donc, aller chercher "Définir une projection", puis choisir notre couche et ensuite cliquer sur la planète et chercher dans l'onglet recherche 27572 et sélectionner Paris Lambert Zone II.
 
-7. Maintenant, pour le modèle numérique de terrain le .asc, refaites "Définir une projection" en Lambert 93 ou 2154 comme ci-dessous.
-   ![Image](media/arcgis/Screenshot_from_2025-03-09_17-54-50.png)
+![Image](media/arcgis/Screenshot_from_2025-03-09_17-39-41.png)
 
-8. Découper les limites administratives par les communes qui se trouvent sur le Crêt du Pilat. Donc aller dans "Mise à jour" puis cliquer sur "Sélectionner" et prendre les communes comme ci-dessous.
-   ![Image](media/arcgis/Screenshot_from_2025-03-10_20-44-20.png)
+![Image](media/arcgis/Screenshot_from_2025-03-09_17-33-01.png)
 
-9. Ensuite, exporter les entités en faisant clic droit, données puis exporter les entités.
+![Image](media/arcgis/Screenshot_from_2025-03-09_17-44-14.png)
 
-10. Retourner dans la fenêtre de géotraitement puis entrer "Zone de tampon".
-    Une fois dessus, en entrée mettez limites_admin découpé, unité linéaire prenez Mètres et mettez 500. Fusionner toutes les entités en sortie en une seule entité.
-    ![Image](media/arcgis/Screenshot_from_2025-03-09_18-07-37.png)
+## 5. Reprojection en mode lot
+Maintenant, il faut reprojeter en mode lot et prendre le système de coordonnées de la carte qui est 2154 ou Lambert 93.
 
-11. Découper ensuite les zones SIC et le CLC 2018 par le buffer.
-    ![Image](media/arcgis/Screenshot_from_2025-03-09_18-06-20.png)
+![Image](media/arcgis/Screenshot_from_2025-03-09_17-50-26.png)
 
-12. Utiliser la fonction "Joindre" pour joindre un champ sur le CLC et le typo. Pour faire la symbologie de la couche CLC, faites clic droit symbologie puis cliquer sur le bouton avec trois traits et cliquer sur importer un style et chercher le .lyr dans le dossier couches de ce GitHub
-    ![Image](media/arcgis/Screenshot_from_2025-03-10_06-26-16.png)
-    ![Image](media/arcgis/style.png)
-    
-    Pour la couche SIC, choisissez comme valeurs SITE_NAME car cela va vous donner le nom des sites présents et vous pourrez ensuite modifier les couleurs comme vous le souhaitez en faisant un clic droit.
-    ![Image](media/arcgis/style_SIC.png)
-    
-    Il est recommandé de faire un double clic sur la variable dans la symbologie puis aller ensuite dans propriétés et modifier la taille de la bordure à 2px pour que les SIC se démarquent plus des autres couches comme Corine Land Cover 2018
-    ![Image](media/arcgis/SIC_bordure.png)
-    
-13. Nous allons maintenant calculer la pente avec l'outil "Pente" toujours dans géotraitement.
-    ![Image](media/arcgis/Screenshot_from_2025-03-09_18-16-06.png)
+## 6. Vérification de la transformation
+Pour voir si la transformation a bien été effectuée, vous pouvez faire clic droit sur la couche, propriétés, sources et références spatiales.
 
-14. Pour ne prendre que les pentes de 4 degrés, nous allons utiliser l'outil "Reclassification". 
-    ![Image](media/arcgis/Screenshot_from_2025-03-09_18-20-57.png)
+![Image](media/arcgis/Screenshot_from_2025-03-09_17-51-12.png)
 
-15. Maintenant nous allons faire l'altitude du raster, avec la calculatrice raster, entrer cette formule : Con("Raster" > 1300, 1, 0)
-    ![Image](media/arcgis/Screenshot_from_2025-03-09_21-49-13.png)
+![Image](media/arcgis/Screenshot_from_2025-03-09_17-51-29.png)
 
-16. Polygoniser les rasters avec "Raster vers polygones" les couches de 1300m et 4 degrés pentes. Pourquoi les polygoniser en vectoriel ? Car cela est plus simple pour les traiter avec nos autres couches qui sont aussi sous format vecteur et non raster.
-    ![Image](media/arcgis/polygon_raster.png)
+## 7. Traitement du modèle numérique de terrain
+Maintenant, pour le modèle numérique de terrain le .asc, refaites "Définir une projection" en Lambert 93 ou 2154 comme ci-dessous.
 
-17. Découper ensuite ces deux couches avec le buffer de 500m en mode lot comme montré précédemment.
+![Image](media/arcgis/Screenshot_from_2025-03-09_17-54-50.png)
 
-18. Pour la couche de 1300m, aller dans la symbologie en faisant clic droit puis symbologie, puis prenez valeurs uniques et dans le champ 1 mettez gridcode puis choisissez vos couleurs.
-    Ensuite, faites exactement la même chose mais avec le raster polygonisé pour les pentes de 4 degrés.
-    ![Image](media/arcgis/Screenshot_from_2025-03-09_18-21-10.png)
-    
+## 8. Découpage des limites administratives
+Découper les limites administratives par les communes qui se trouvent sur le Crêt du Pilat. Donc aller dans "Mise à jour" puis cliquer sur "Sélectionner" et prendre les communes comme ci-dessous.
 
-19. Maintenant pour la mise en page, aller dans "Insérer" puis "Nouvelle mise en page" et prenez le format A3 car notre légende est grande et cela est plus pratique pour organiser notre mise en page de la carte.
-    ![Image](media/arcgis/Screenshot_from_2025-03-11_21-53-05.png)
-    ![Image](media/arcgis/Screenshot_from_2025-03-11_21-54-13.png)
+![Image](media/arcgis/Screenshot_from_2025-03-10_20-44-20.png)
 
-20. Allez dans "Fenêtre cartographique" puis sélectionnez votre Carte.
-    ![Image](media/arcgis/Screenshot_from_2025-03-11_21-55-00.png)
+## 9. Exportation des entités
+Ensuite, exporter les entités en faisant clic droit, données puis exporter les entités.
 
-21. Prenez une flèche de direction d'orientation vers le Nord comme montré ci-dessous.
-    ![Image](media/arcgis/Screenshot_from_2025-03-11_21-56-35.png)
+## 10. Création d'une zone tampon
+Retourner dans la fenêtre de géotraitement puis entrer "Zone de tampon".
+Une fois dessus, en entrée mettez limites_admin découpé, unité linéaire prenez Mètres et mettez 500. Fusionner toutes les entités en sortie en une seule entité.
 
-22. Dans l'onglet "Texte dynamique", ajouter "Référence spatiale" ; "Nom" ; "Crédit".
-    ![Image](media/arcgis/Screenshot_from_2025-03-11_21-57-53.png)
+![Image](media/arcgis/Screenshot_from_2025-03-09_18-07-37.png)
 
-23. Ajouter une légende pour la carte en allant dans le bouton légende et prenez une légende que vous appréciez.
-    ![Image](media/arcgis/Screenshot_from_2025-03-11_22-04-51.png)
+## 11. Découpage des zones SIC et CLC
+Découper ensuite les zones SIC et le CLC 2018 par le buffer.
 
-24. Renommez vos couches dans l'onglet carte. Cela va juste renommer les couches et pas changer les noms dans la géodatabase, donc vous pouvez mettre des accents. De plus, décochez en-tête dans chaque objet de la légende que vous avez gardé.
-    Vous pouvez ensuite jouer avec la vue de la carte dans la mise en page.
-    ![Image](media/arcgis/Screenshot_from_2025-03-11_22-11-03.png)
+![Image](media/arcgis/Screenshot_from_2025-03-09_18-06-20.png)
 
-25. Ensuite, convertissez la légende en graphique avec le clic droit puis supprimez le titre de la légende "Legend".
+## 12. Jointure et symbologie
+Utiliser la fonction "Joindre" pour joindre un champ sur le CLC et le typo. Pour faire la symbologie de la couche CLC, faites clic droit symbologie puis cliquer sur le bouton avec trois traits et cliquer sur importer un style et chercher le .lyr dans le dossier couches de ce GitHub
 
-26. Maintenant que la légende est en graphique, vous pouvez sélectionner les "sans valeurs" texte et les supprimer si vous le souhaitez.
+![Image](media/arcgis/Screenshot_from_2025-03-10_06-26-16.png)
 
-27. Aller maintenant dans la fenêtre cartographique en double-cliquant puis sélectionner la bordure et mettez-la en transparent.
-    ![Image](media/arcgis/Screenshot_from_2025-03-11_22-19-36.png)
+![Image](media/arcgis/style.png)
 
-28. Pour exporter la mise en page, aller dans "Partager" ; "Imprimer la mise en page".
-    ![Image](media/arcgis/Screenshot_from_2025-03-11_22-17-52.png)
-    ![Image](media/arcgis/Screenshot_from_2025-03-11_22-18-07.png)
+Pour la couche SIC, choisissez comme valeurs SITE_NAME car cela va vous donner le nom des sites présents et vous pourrez ensuite modifier les couleurs comme vous le souhaitez en faisant un clic droit.
 
+![Image](media/arcgis/style_SIC.png)
+
+Il est recommandé de faire un double clic sur la variable dans la symbologie puis aller ensuite dans propriétés et modifier la taille de la bordure à 2px pour que les SIC se démarquent plus des autres couches comme Corine Land Cover 2018
+
+![Image](media/arcgis/SIC_bordure.png)
+
+## 13. Calcul de la pente
+Nous allons maintenant calculer la pente avec l'outil "Pente" toujours dans géotraitement.
+
+![Image](media/arcgis/Screenshot_from_2025-03-09_18-16-06.png)
+
+## 14. Reclassification des pentes
+Pour ne prendre que les pentes de 4 degrés, nous allons utiliser l'outil "Reclassification".
+
+![Image](media/arcgis/Screenshot_from_2025-03-09_18-20-57.png)
+
+## 15. Calcul de l'altitude du raster
+Maintenant nous allons faire l'altitude du raster, avec la calculatrice raster, entrer cette formule : Con("Raster" > 1300, 1, 0)
+
+![Image](media/arcgis/Screenshot_from_2025-03-09_21-49-13.png)
+
+## 16. Polygonisation des rasters
+Polygoniser les rasters avec "Raster vers polygones" les couches de 1300m et 4 degrés pentes. Pourquoi les polygoniser en vectoriel ? Car cela est plus simple pour les traiter avec nos autres couches qui sont aussi sous format vecteur et non raster.
+
+![Image](media/arcgis/polygon_raster.png)
+
+## 17. Découpage des couches avec buffer
+Découper ensuite ces deux couches avec le buffer de 500m en mode lot comme montré précédemment.
+
+## 18. Configuration de la symbologie
+Pour la couche de 1300m, aller dans la symbologie en faisant clic droit puis symbologie, puis prenez valeurs uniques et dans le champ 1 mettez gridcode puis choisissez vos couleurs.
+Ensuite, faites exactement la même chose mais avec le raster polygonisé pour les pentes de 4 degrés.
+
+![Image](media/arcgis/Screenshot_from_2025-03-09_18-21-10.png)
+
+## 19. Préparation de la mise en page
+Maintenant pour la mise en page, aller dans "Insérer" puis "Nouvelle mise en page" et prenez le format A3 car notre légende est grande et cela est plus pratique pour organiser notre mise en page de la carte.
+
+![Image](media/arcgis/Screenshot_from_2025-03-11_21-53-05.png)
+
+![Image](media/arcgis/Screenshot_from_2025-03-11_21-54-13.png)
+
+## 20. Sélection de la carte
+Allez dans "Fenêtre cartographique" puis sélectionnez votre Carte.
+
+![Image](media/arcgis/Screenshot_from_2025-03-11_21-55-00.png)
+
+## 21. Ajout d'une flèche d'orientation
+Prenez une flèche de direction d'orientation vers le Nord comme montré ci-dessous.
+
+![Image](media/arcgis/Screenshot_from_2025-03-11_21-56-35.png)
+
+## 22. Ajout de texte dynamique
+Dans l'onglet "Texte dynamique", ajouter "Référence spatiale" ; "Nom" ; "Crédit".
+
+![Image](media/arcgis/Screenshot_from_2025-03-11_21-57-53.png)
+
+## 23. Ajout d'une légende
+Ajouter une légende pour la carte en allant dans le bouton légende et prenez une légende que vous appréciez.
+
+![Image](media/arcgis/Screenshot_from_2025-03-11_22-04-51.png)
+
+## 24. Personnalisation des couches
+Renommez vos couches dans l'onglet carte. Cela va juste renommer les couches et pas changer les noms dans la géodatabase, donc vous pouvez mettre des accents. De plus, décochez en-tête dans chaque objet de la légende que vous avez gardé.
+Vous pouvez ensuite jouer avec la vue de la carte dans la mise en page.
+
+![Image](media/arcgis/Screenshot_from_2025-03-11_22-11-03.png)
+
+## 25. Conversion de la légende en graphique
+Ensuite, convertissez la légende en graphique avec le clic droit puis supprimez le titre de la légende "Legend".
+
+## 26. Nettoyage de la légende
+Maintenant que la légende est en graphique, vous pouvez sélectionner les "sans valeurs" texte et les supprimer si vous le souhaitez.
+
+## 27. Modification de la bordure
+Aller maintenant dans la fenêtre cartographique en double-cliquant puis sélectionner la bordure et mettez-la en transparent.
+
+![Image](media/arcgis/Screenshot_from_2025-03-11_22-19-36.png)
+
+## 28. Exportation de la mise en page
+Pour exporter la mise en page, aller dans "Partager" ; "Imprimer la mise en page".
+
+![Image](media/arcgis/Screenshot_from_2025-03-11_22-17-52.png)
+
+![Image](media/arcgis/Screenshot_from_2025-03-11_22-18-07.png)
+
+## Résultat final
 Le résultat : 
+
 ![Image](media/arcgis/mise_en_page2.pdf)
