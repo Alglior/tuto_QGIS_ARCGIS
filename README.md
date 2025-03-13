@@ -10,5 +10,5 @@ Deux méthodologies sont proposées pour cette cartographie :
 1. [Méthodologie ArcGIS Pro](/arcgis.md)
 2. [Méthodologie QGIS](/qgis.md)
 
-Bilan 
+Conclusion de l'utilisation des deux logiciels ARCGIS PRO et QGIS pour faire la carte de l'occupation du sol des Crêt du Pilat:
 [Bilan](/bilan.md)
